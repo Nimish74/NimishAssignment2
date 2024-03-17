@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="Assignment1.css">
+    
+    </head>
+    
+    <body>
+        <script type = "text/javascript">
+        
+            //window.close();
+            alert("Hello");
+            prompt("What is your name: ")
+        
+        
+        </script>
+    
+    
+    <script>
+        
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var subject = document.getElementById("subject").value;
+            var message = document.getElementById("message").value;
+            var error = document.getElementById("error");
+
+            // Check if any field is empty
+            if (name == "" || email == "" || subject == "" || message == "") {
+                error.textContent = "All fields are required";
+                return false;
+            }
+            
+            // Check if name contains only alphabets
+        var nameRegex = /^[A-Za-z]+$/;
+        if (!nameRegex.test(name)) {
+            error.textContent = "Name should contain only alphabets";
+            return false;
+        }
+
+            // Check if email format is valid
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                error.textContent = "Invalid email address";
+                return false;
+            }
+
+            // If all validations pass, return true
+            return true;
+        }
+    </script>
+    
+
+    
+    <nav>
+            
+                <a href="index.html">Home Page</a> &nbsp;
+                <a href="ResumeDetails.html">Resume Details</a> &nbsp;
+                <a href="ContactPage.html">Contact Page</a>
+            
+        </nav>
+    
+    <marquee><img src="Images/Contact%20me%20image.jpeg" height="200px"></marquee>
+    
+    <div id = "headerbox">
+    <button type ="button" onclick="document.getElementById('demo').innerHTML = Date()"> Click Me
+            
+            </button>
+    <p id = "demo"></p>
+        
+    </div>
+    
+    <section>
+    <h2>Let's Connect!</h2>
+    <p>Have a question or want to discuss a project? Drop me a line!</p>
+
+    <form method="post" action="mailto:nimishanand74@gmail.com" enctype="text/plain">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required><br><br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="8" cols="50" required></textarea><br><br>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+</body>
+    
+    <footer>
+    <p>&copy; 2024 Nimish Anand. All rights reserved.</p>
+</footer>
+</html>

@@ -1,0 +1,126 @@
+body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+nav {
+    background-color: #3498db;
+             color: #fff;
+            text-align: right;
+    
+}
+
+
+nav a {
+        color: #fff; /* Change the color to your desired color */
+        font-size: 17px; /* Change the font size to your desired size */
+        
+    }
+
+    /* Style for the hover effect */
+    nav a:hover {
+        color: black; /* Change the color to your desired hover color */
+    }
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        
+         header h1{
+            font-size: 30px; /* Adjust the font size as needed */
+        }
+
+     img {
+            float: left; /* Float the image to the left */
+            margin-right: 50px; /* Add some space between image and text */
+         
+        }
+
+    #headerbox
+{
+    text-align: center;
+    
+    font-family: "American Typewriter";
+    font-size: 20;
+}
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            border-radius: 10px;
+        }
+
+         h2, h3 {
+            color: #3498db;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .contact-info div {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+       
+
+        .education, .experience {
+            margin-bottom: 30px;
+        }
+
+        .education h2, .experience h3, .contact-info h3 {
+            color: #3498db;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        .skills {
+            margin-bottom: 30px;
+        }
+
+        .skills h3 {
+            color: #3498db;
+        }
+
+        .skills ol {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+        }
+
+        .skills li {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        
+
+    footer {
+    
+        background-color: #3498db;
+        
+        color: #fff;
+        
+
+
+            }
